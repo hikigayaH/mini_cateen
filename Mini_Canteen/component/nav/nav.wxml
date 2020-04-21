@@ -1,0 +1,8 @@
+<!--component/nav/nav.wxml-->
+<view class='nav_bar'>
+  <block wx:for="{{titles}}" wx:key="index">
+    <view class='item-tab {{currentindex === index ? "active" : ""}}' bindtap="onItemclick" data-index='{{index}}' data-item='{{item}}'>
+      <text class='titleclass'>{{item}}</text>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,6 @@
+  {
+  "usingComponents": {
+    "preview": "../../component/order/preview/preview"
+  },
+  "onReachBottomDistance": 50
+}

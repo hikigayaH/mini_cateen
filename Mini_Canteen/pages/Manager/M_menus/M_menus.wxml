@@ -1,0 +1,24 @@
+<!--pages/M_menus/M_menus.wxml-->
+<view class="nav">
+  <button class='btn' type="primary" bindtap="addmenus">添加菜式</button>
+</view>
+
+<view class="contain">
+  <view class="main-item" style="background-color: #eee">
+    <view class='first'>标号</view>
+    <view class='second'>菜名</view>
+    <view class='third'>菜价</view>
+  </view>
+  <block wx:for="{{menus_list}}" wx:key="index">
+    <view class="main-item {{(index+1)%2===0 ? 'Odd':'Even'}}" bindtap="changefood" data-item='{{item}}'>
+      <view class='first'>{{menus_list[index].foodid}}</view>
+      <view class='second'>{{menus_list[index].title}}</view>
+      <view class='third'>{{menus_list[index].price}}</view>
+    </view>
+  </block>
+  <view class='btn-box'>
+    <button class='page_btn' bindtap="lastpage">上一页</button>
+    <text style="line-height: 70rpx; vertical-align: middle">{{pagenum}}/{{total_page}}</text>
+    <button class='page_btn' bindtap="nextpage">下一页</button>
+  </view> 
+</view>

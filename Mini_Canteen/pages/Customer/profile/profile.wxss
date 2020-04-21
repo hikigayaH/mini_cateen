@@ -1,0 +1,111 @@
+/* pages/profile/profile.wxss */
+
+@font-face {
+    font-family: 'icomoon';
+    src: url(data:application/font-woff2;charset=utf-8;base64,d09GMgABAAAAAASYAA0AAAAACkAAAARAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCXhEICoh4hx0LHAABNgIkAyYEIAWDGweBCxtiCMguDsxTn86K04bCpDxxML+yNoLIZlk9s9Ld7z4BhQZm+R4AJZslI0WIKVH0kQFToBhYA+vyKQ3Q3QQnOwEsBW5p+r+jMAsDzyLf9ll6AV+AdwN8ksar/v//f7+ZkYuEJqYp0dL7H5WHaRNdFk8mcZXOWUjQphK9WsgrdW29ziA9A+o+wlxq7KMQ8HmzPHzjGy8Y7x3oj5FIQugvFEjI+VDcpUZ6OB3CndRh4lfLoh/DWQw28Sjxc09+t/sdlRkuAhhPFsiR8fhlLpIFxischlKvJAmTf+7pGlK6v6T73aiaLJQAQibqRAYiIWH/M0GB+rgQ3QaBAWAshhMN4jtAAQiEkKWQjOMpM+MGF5MH+1D18eP9FEqFH1zvH1fd2tHPaM0dZXt205zTz4MPSOdpmrlyYBvkotYi5apBHb1AfzOQ+Ea1shPy2rOOuKzD9vc6/DSyljlYUulRgTVc2R6rex92Wdpg2wq0NUorfFtV8kVtm/iqM4Z3Xjtgcp2BZUjzSrCiHKgqA4GMrMy+iczPzxyJ5vlfn0uqzoU/X0qidcH3F3hXO8DRqsBVh4w1G+cu7ZyYT3q+LC98cGNkfXI4gJX94eWhEcS1n9V8rqpEhEe0S0fVGLHnNzrgz7GPA99l+7zPye+d//mVm4lUm0tdMDlDqmzPG1gpFRiYXP/Cdvp7tM79qDpnv2me9dpYmV4OpOaVwJqyz/tie2YNPreGJ5UKBHKEF549uzrzOFObpZOtPzwVirFbpktkNpuG+dGuO/yIlzeOcK+2ty4n6u/u8xcHmDXa7W/DxiWU08FZjl/JZePMgar4/NekoYUCgbDBFMhff1968ZFldWlOWgpk/Q8fsFf3aBNzswEqAcXoddOlBMvKZBSilHOBAlSuAE1ALbsqNVIYJayu9nKRqakcMlFKcPsRpqKmuYg4dYAz7rgrpmvjDvbv21O+yg30Lu0/c3JtKRyJy1cdVRz5OF/lAKS747h4tc3JYYNKTnIyqEhyc0ojIwocWVkOvW4fuuyXVr/UByDd89a1m+xWInAKJJrT67KiqdToaBpNJ8yrQJ77jOe/cGNDw8v/gy9AXl+/wLJ2ZpGh4zUgfvzjl8wsIh/2W29V2EHXdN/NzGkt9Eog2Km2FEgX6x2oQwFxPk5a/pqmS/wdG3CB5zUFBtgqg8TqDvSyYMs9BqeUBLMpGY6iFHCRsqayK1BHcN/5pbE+IYuinzCQlJJgNCXDYkoBJylrRroqUEdww41Lyz1mtYaN1ttoow2sbjSdVp0PcY4+K223ztW28Nu+9UDarhDZX6DPFlutnj3ZEgst5lL/YFaTpR92Qn76NpOt1GfDKNpX26bPtblr7Paxk1k4vbCQZxqLrgMLcWVN/4pxCIjEersBRJIiy1FELerRE73RL8qo6ivX9TRXW9HbN9RYLJZQGOW1WMAKNrCDA5zgCroBAAAA) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon-verified_user:before {
+  content: "\e907";
+}
+
+.icon-person:before {
+  content: "\e906";
+}
+
+.icon-settings:before {
+  content: "\e901";
+}
+
+.icon-keyboard_arrow_right:before {
+  content: "\e903";
+}
+
+.icon-money:before {
+  content: "\e904";
+}
+
+.icon{
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.front-icon{
+  margin-right: 16rpx;
+}
+
+.icon-keyboard_arrow_right{
+  float: right;
+}
+
+page {
+  height: 100vh;
+  width: 100vw;
+}
+
+.important{
+  color: #ddd
+}
+
+.header-box {
+  background-color: #ffbe76;
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+}
+
+.image-box {
+  width: 200rpx;
+  height: 100%;
+  display: flex;
+}
+
+.header-image {
+  height: 70%;
+  width: 70%;
+  border-radius: 70rpx;
+  background-color: white;
+  margin: auto;
+}
+
+.body-box {
+  width: 100%;
+}
+
+.nickName {
+  font-size: 36rpx;
+  line-height: 36rpx;
+  display: inline-block;
+  margin-top: 30rpx;
+}
+
+.exitbtn {
+  display: block;
+  width: 90vw;
+  height: 50px;
+  border: none;
+  background: #2c2c2c;
+  color: #ffbe76;
+  margin-bottom: 20rpx;
+  margin-top: 40rpx;
+}
+
+.navi-btn {
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  position: relative;
+}
+
+.navi-btn::after {
+  content: '';
+  position: absolute;
+  width: 92%;
+  left: 4%;
+  bottom: 0%;
+  background-color: #ddd;
+  height: 2rpx;
+}

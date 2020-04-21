@@ -1,0 +1,8 @@
+/* pages/order/order.wxss */
+page{
+  background-color: #EDEDED;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 80rpx;
+  box-sizing: border-box;
+}

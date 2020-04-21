@@ -1,0 +1,97 @@
+/* pages/M_member/M_member.wxss */
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.contain {
+  width: 95%;
+  height: 95%;
+  margin: auto auto;
+  box-sizing: border-box;
+  /* background-color: #fcfcfc; */
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  font-size: 30rpx;
+  display: inline-block;
+  height: 70rpx;
+  border: none;
+  margin-right: 30rpx;
+  line-height: 70rpx;
+}
+
+.page_btn{
+  font-size: 30rpx;
+  display: inline-block;
+  height: 70rpx;
+  border: none;
+  line-height: 70rpx;
+}
+
+.btn-box{
+  margin: 30rpx 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-item{
+  display: flex;
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #fcfcfc;
+}
+
+.main-item .first{
+  flex: 3;
+  border-right: 2rpx solid #fff;
+
+}
+
+.main-item .second{
+  flex: 3;
+  border-right: 2rpx #fff solid;
+}
+
+.main-item .third{
+  flex: 2;
+}
+
+.Odd .first{
+  flex: 3;
+  border-right: 2rpx solid #fff;
+
+}
+
+.Odd .second{
+  flex: 3;
+  border-right: 2rpx #fff solid;
+}
+
+.Odd .third{
+  flex: 2;
+}
+
+.Odd{
+  background-color: #eee
+}
+
+.Even .first{
+  flex: 3;
+  border-right: 2rpx solid #ddd;
+
+}
+
+.Even .second{
+  flex: 3;
+  border-right: 2rpx #ddd solid;
+}
+
+.Even .third{
+  flex: 2;
+}

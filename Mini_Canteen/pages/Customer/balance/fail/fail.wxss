@@ -1,0 +1,8 @@
+/* pages/Customer/balance/fail/fail.wxss */
+._box{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 40rpx;
+}

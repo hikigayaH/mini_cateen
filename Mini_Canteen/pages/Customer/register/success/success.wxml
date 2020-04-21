@@ -1,0 +1,6 @@
+<!--pages/Customer/register/success/success.wxml-->
+<view class='_box'>
+    <icon type="success" size="150" style="display:block; margin:auto"></icon>
+    <text style="margin:auto; display:block; font-size:60rpx;">注册成功</text>
+    <button style="background-color: #09bb07; color: #fff;margin: 10rpx auto; width: 70vw; height: 100rpx" bindtap="tapsure" type="primary">确定</button>
+</view>

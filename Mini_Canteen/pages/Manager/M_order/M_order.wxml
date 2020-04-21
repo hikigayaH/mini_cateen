@@ -1,0 +1,17 @@
+<!--pages/M_order/M_order.wxml-->
+<view style="height: 100vh; display:flex; flex-direction:column">
+  <nav titles="{{nav_content}}" bind:ontabclick="onTapnav"></nav>
+  <scroll-view class="contain" scroll-y='{{true}}'>
+    <block wx:for="{{cont_list}}" wx:key="*this">
+      <view class="item_box">
+        <view class="cont_label" style="background-color: {{index%2 === 0 ? '#eee' : '#f9f9f9'}}">
+        {{item.key}}
+        </view>
+        <view class="cont_value" style="background-color: {{index%2 !== 0 ? '#eee' : '#f9f9f9'}}">
+        {{item.value}}
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+  <button bindtap="navigtoexdata">导出相关数据</button>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/M_home/M_home.wxml-->
+<view class="container">
+  <view wx:for="{{list}}" class="grid_item" wx:key="index" hover-class="grid_item_hover" bindtap="onclickButton" data-url="{{item.url}}">
+    <image src="{{item.src}}" ></image>
+    <text>{{item.title}}</text>
+  </view>
+  <view class="grid_item" hover-class="grid_item_hover" bindtap="onexit">
+    <image src='/asset/icon/Exit.png'></image>
+    <text>退出</text>
+  </view>
+</view>

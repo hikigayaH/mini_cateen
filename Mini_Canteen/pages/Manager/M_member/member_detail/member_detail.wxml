@@ -1,0 +1,29 @@
+<!--pages/Manager/M_member/member_detail/member_detail.wxml-->
+<!--pages/M_profile/M_profile.wxml-->
+<form class="login-form" bindsubmit="changebalance">
+  <view class='header_box'>
+    <view class='label'>用户号</view>
+    <text style="margin-left: 30rpx; vertical-align:middle; line-height: 40px;">{{userid}}</text>
+  </view>
+
+  <view class='header_box'>
+    <view class='label'>姓名</view>
+    <text style="margin-left: 30rpx; vertical-align:middle; line-height: 40px;">{{uname}}</text>
+  </view>
+
+  <view class='header_box'>
+    <view class='label'>性别</view>
+    <text style="margin-left: 30rpx; vertical-align:middle; line-height: 40px;">{{ugender}}</text>
+  </view>
+
+  <view class='box'>
+    <view class='label'>余额</view>
+    <view class="textb" style="border-bottom-color:{{Bactive ===1? '#ffbe76' : '#ddd'}}; caret-color:{{Bactive ===1? '#ffbe76' : '#ddd'}}">
+      <input bindfocus="handleBfocus" bindblur="handleBblur" name="ubalance" placeholder="余额" placeholder-style="color: #adadad;" value="{{ubalance}}"/>
+    </view>
+  </view>
+
+
+  <button class="btn" form-type="submit">确认</button>
+  <button class="btn" style="background-color: #ddd; color: red" bindtap='deleteuser'>删除用户</button>
+</form>

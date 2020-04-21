@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<!-- <view class="searchbar" bindtap="onTapsearch">
+  <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+  <text class="weui-search-bar__text">搜索</text>
+</view> -->
+<nav titles="{{nav_content}}" bind:ontabclick="onTapnav"></nav>
+<!-- <swiper>
+  <block wx:for="{{recomPage}}">
+  </block>
+</swiper> -->
+<body cont_list="{{cont_list}}" cate_item="{{cate_item}}" offertime="{{offertime}}" tapIndex="{{tapIndex}}"></body>

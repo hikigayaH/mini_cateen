@@ -1,0 +1,75 @@
+/* pages/Customer/order/order_detail/order_detail.wxss */
+.page{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.icon-box{
+  display: flex;
+  width: 100vw;
+  padding: 40rpx 0 60rpx;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon-box::after{
+  content: '';
+  border: 1rpx solid #eee;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+}
+
+._icon{
+  margin: auto;
+}
+
+.status_title{
+  margin: 10rpx auto;
+}
+
+.price_title{
+  margin: auto;
+  font-weight: bolder;
+  font-size: 60rpx;
+  margin-bottom: 10rpx;
+}
+
+.detail_box{
+  padding: 40rpx 75rpx;
+  position: relative;
+}
+
+.detail_item{
+  font-size: 30rpx;
+  line-height: 2;
+  overflow: hidden;
+}
+
+.detail_label{
+  float: left;
+  min-width:  4em;
+  margin-right: 20rpx;
+  color: #aaa;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.detail_value{
+  overflow: hidden;
+  /* 搭配word-wrap */
+  display: block;
+  word-break: normal;
+  word-wrap: break-word;
+}
+
+.detail_ft{
+  padding: 50rpx 10%;
+  color: red;
+}
+
+.detail_value_cont{
+  position: absolute;
+  left: 235rpx;
+}

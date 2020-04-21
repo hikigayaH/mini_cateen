@@ -1,0 +1,10 @@
+<!--pages/Customer/profile/balance/balance.wxml-->
+<view class='box'>
+  <view class="sonbox">
+    您的账户余额：
+  </view>
+  <view style="font-weight: 700; color: #ffbe76" class="sonbox">
+    {{fund}}
+  </view>
+</view>
+<button class='btn' bindtap='naviback'>确定</button>

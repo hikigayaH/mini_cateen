@@ -1,0 +1,6 @@
+<!--pages/order/order.wxml-->
+<!-- <scroll-view bindrefresherpulling="loadnextpage" scroll-y="true"> -->
+  <block wx:for="{{order_list}}" wx:key="index">
+    <preview order_item="{{item}}" data-item="{{item}}" data-index="{{index}}"/>
+  </block>
+<!-- </scroll-view> -->

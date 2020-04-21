@@ -1,0 +1,66 @@
+<!--pages/Manager/M_menus/detail_page/detail_page.wxml-->
+
+<form bindsubmit="onsubmit">
+  <view class="contain">
+    <view class="big-box">
+      <view>
+        <image src="{{url}}" bindtap="ontapimage" />
+      </view>
+      <view class="nav-box">
+        <view class="item-nav">
+          <view class='box'>
+            <view class='label-nav'>标号</view>
+            <view class="textb">
+              <input class="{{active==='focus'?'focus':''}}" bindfocus="handlefocus" bindblur="handleblur" name="number" placeholder="填写新标号" placeholder-style="color: #adadad;" value="{{foodid}}"/>
+            </view>
+          </view>
+        </view>
+        <view class="item-nav">
+          <view class='box'>
+            <view class='label-nav'>种类</view>
+            <view class="textb">
+              <input class="{{Cactive==='focus'?'focus':''}}" bindfocus="handleCfocus" bindblur="handleCblur" name="category" placeholder="填写菜种类" placeholder-style="color: #adadad;" value="{{category}}" />
+            </view>
+          </view>
+        </view>
+        <view class="item-nav">
+          <view class='box'>
+            <view class='label-nav'>价格</view>
+            <view class="textb">
+              <input class="{{Pactive==='focus'?'focus':''}}" bindfocus="handlePfocus" bindblur="handlePblur" name="price" placeholder="填写菜价" placeholder-style="color: #adadad;" value="{{price}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="line-box">
+      <view class='box'>
+        <view class='label'>描述标签</view>
+        <view class="textb">
+          <input class="{{Dactive==='focus'?'focus':''}}" bindfocus="handleDfocus" bindblur="handleDblur" name="description" placeholder="填写描述" placeholder-style="color: #adadad;" value="{{description}}" />
+        </view>
+      </view>
+    </view>
+    <view class="line-box">
+      <view class='box'>
+        <view class='label'>供应时间</view>
+        <view class="textb">
+          <input class="{{Oactive==='focus'?'focus':''}}" bindfocus="handleOfocus" bindblur="handleOblur" name="offertime" placeholder="填写供应时间" placeholder-style="color: #adadad;" value="{{offertime}}" />
+        </view>
+      </view>
+    </view>
+    <view class="line-box">
+      <view class='box'>
+        <view class='label'>菜名</view>
+        <view class="textb">
+          <input class="{{Nactive==='focus'?'focus':''}}" bindfocus="handleNfocus" bindblur="handleNblur" name="title" placeholder="填写新菜名" placeholder-style="color: #adadad;" value="{{name}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn_box">
+    <button class="addbtn" wx:if="{{add_food}}" form-type="submit">添加菜式</button>
+    <button class="btn" wx:if="{{!add_food}}" form-type="submit">保存更改</button>
+    <button class="btn" bindtap="deletemenus" style="background: #fcfcfc; color: red" wx:if="{{!add_food}}">删除菜式</button>
+  </view>
+</form>

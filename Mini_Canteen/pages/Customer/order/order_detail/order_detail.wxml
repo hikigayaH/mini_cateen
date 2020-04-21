@@ -1,0 +1,39 @@
+<!--pages/Customer/order/order_detail/order_detail.wxml-->
+<scroll-view class="page">
+  <view class="icon-box">
+    <icon type="{{icon_type}}" size="120rpx" class="_icon"></icon>
+    <text class="status_title">{{text_status}}</text>
+    <text class="price_title">-{{fund}}</text>
+  </view>
+  <view class="detail_box">
+    <view class="detail_item">
+      <view class="detail_label">订单状态</view>
+      <view class="detail_value">{{text_status}}</view>
+    </view>
+    <view class="detail_item">
+      <view class="detail_label">失效时间</view>
+      <view class="detail_value">{{dealline}}</view>
+    </view>
+    <view class="detail_item">
+      <view class="detail_label">交易时间</view>
+      <view class="detail_value">{{time}}</view>
+    </view>
+    <view class="detail_item">
+      <view class="detail_label">订单号</view>
+      <view class="detail_value">{{bill_num}}</view>
+    </view>
+    <view class="detail_item">
+      <view class="detail_label">订单内容</view>
+      <view class="detail_value">
+        <block wx:for="{{content_list}}" wx:key="index">
+          <view>
+            <view>{{item}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="detail_ft">
+    <button bindtap="onbtntap" style="color: red;">取消订单</button>
+  </view>
+</scroll-view>

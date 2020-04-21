@@ -1,0 +1,20 @@
+<!--pages/register/register.wxml-->
+<form class="login-form" bindsubmit="register">
+
+  <view class="textb">
+    <input class="{{UclassName === 'focus' ? 'focus' : ''}}" focus="{{true}}" bindfocus="handleUfocus" bindblur="handleUblur" type="text" name="userid"/>
+    <span data-placeholder="用户名"></span>
+  </view>
+
+  <view class="textb">
+    <input class="{{PclassName === 'focus' ? 'focus' : ''}}" bindfocus="handlePfocus" bindblur="handlePblur" password="{{true}}" name="psw_f"/>
+    <span data-placeholder="输入密码"></span>
+  </view>
+
+  <view class="textb">
+    <input class="{{PAclassName === 'focus' ? 'focus' : ''}}" bindfocus="handlePAfocus" bindblur="handlePAblur" password="{{true}}" name="psw_s"/>
+    <span data-placeholder="确认密码"></span>
+  </view>
+
+  <button class="logbtn" form-type="submit">注册</button>
+</form>

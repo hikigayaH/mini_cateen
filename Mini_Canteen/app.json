@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/Customer/home/home",
+    "pages/Customer/profile/profile",
+    "pages/Customer/order/order_preview/order_preview",
+    "pages/Customer/order/order_detail/order_detail",
+    "pages/Customer/register/register",
+    "pages/Customer/cart/cart",
+    "pages/Manager/M_home/M_home",
+    "pages/Manager/M_order/M_order",
+    "pages/Manager/M_profile/M_profile",
+    "pages/Manager/M_menus/M_menus",
+    "pages/Manager/M_member/M_member",
+    "pages/Customer/balance/success/success",
+    "pages/Customer/balance/fail/fail",
+    "pages/Customer/register/success/success",
+    "pages/Customer/profile/balance/balance",
+    "pages/Customer/profile/setting/setting",
+    "pages/Customer/profile/personal/personal",
+    "pages/Customer/profile/acount/acount",
+    "pages/Manager/M_order/M_exorder/M_exorder",
+    "pages/Manager/M_menus/detail_page/detail_page",
+    "pages/Manager/M_member/member_detail/member_detail"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Customer/home/home",
+        "text": "点餐",
+        "iconPath": "/asset/icon/book.png",
+        "selectedIconPath": "/asset/icon/book_active.png"
+      },
+      {
+        "pagePath": "pages/Customer/order/order_preview/order_preview",
+        "text": "订单",
+        "iconPath": "/asset/icon/order.png",
+        "selectedIconPath": "/asset/icon/order_active.png"
+      },
+      {
+        "pagePath": "pages/Customer/profile/profile",
+        "text": "我的",
+        "iconPath": "/asset/icon/profile.png",
+        "selectedIconPath": "/asset/icon/profile_active.png"
+      }
+    ],
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c"
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "EasyEat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

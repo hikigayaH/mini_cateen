@@ -1,0 +1,38 @@
+<!--component/category/category.wxml-->
+
+<view class='body'>
+  <view class="horizon">
+    <block wx:for="{{horiz_bar}}" wx:key="index">
+      <text class="horizon_item {{cur_horiz === index? '.horizon_item_hover' : ''}}" bindtap="onTapItem" data-index="{{index}}">{{item}}</text>
+    </block>
+  </view>
+  <view class="show_box">
+    <scroll-view scroll-y="true" class="cate_side_bar">
+      <block wx:for="{{cate_item}}" wx:key="index">
+        <view class="item_bar {{tapIndex === index? 'item_bar_hover' : ''}}" bindtap="onTapCateItem" data-index="{{index}}">
+          {{item}}
+        </view>
+      </block>
+    </scroll-view>
+    <scroll-view scroll-y="true" class="cate_show_box" bindscroll="onTouchStart">
+      <view class="content_item" wx:for="{{cont_list}}" wx:key="index" wx:for-item="outer_item" wx:for-index="outer_index">
+        <view class="image_box">
+          <image src="{{host + outer_item.url}}" />
+        </view>
+
+
+        <view class="text_box">
+          <text class="cont_title">{{outer_item.title}}</text>
+          <text class="cont_desc" wx:for="{{outer_item.description}}" wx:key="index" wx:for-item="inner_item">{{inner_item}}</text>
+          <text class="cont_price"><text decode="true" style="font-size: 36rpx">￥</text>{{outer_item.price}}</text>
+          <view class="calcu">
+          <i class="icon-minus-alt iconfont-minus" bindtap="onTapSub" data-index="{{outer_index}}" wx:if="{{cont_list[outer_index].num>0}}"></i>
+            <text style="font-size: 30rpx; margin-bottom: 10rpx; vertical-align: middle;" wx:if="{{cont_list[outer_index].num>0}}">{{cont_list[outer_index].num}}</text>
+          <i class="icon-plus-alt iconfont-plus" data-index="{{outer_index}}" bindtap="onTapAdd"></i>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="cart_btn" animation="{{animation}}" bindtap="onTapcart_btn"> <i class="icon-cart"></i></view>
+</view>

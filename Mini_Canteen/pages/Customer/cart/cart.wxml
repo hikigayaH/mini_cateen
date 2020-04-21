@@ -1,0 +1,42 @@
+<!--pages/Customer/cart/cart.wxml-->
+<view class="body">
+  <scroll-view class="cart-list">
+    <view class="cart-item" wx:for="{{cart_list}}" wx:key="index" wx:for-item="outer_item" wx:for-index="outer_index" bindlongpress="onLongpressDelete" data-cart_index="{{outer_index}}">
+      <view class="image_box">
+        <image src="{{host + outer_item.url}}" />
+      </view>
+
+      <view class="box">
+        <view class="text_box">
+          <text class="cart_title">{{outer_item.title}}</text>
+          <text class="cart_tip">备注: {{outer_item.offertime}}</text>
+          <text class="cart_price"><text decode="true" style="font-size: 36rpx">￥</text>{{outer_item.price*outer_item.num}}</text>
+        </view>
+
+        <view class="calcu-box">
+          <view class="calcu">
+            <i class="icon-minus-alt iconfont-minus" bindtap="onTapSub" data-index="{{outer_index}}"></i>
+            <text style="font-size: 30rpx; margin-bottom: 10rpx; vertical-align: middle;">{{cart_list[outer_index].num}}</text>
+            <i class="icon-plus-alt iconfont-plus" data-index="{{outer_index}}" bindtap="onTapAdd"></i>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+  <view class="operate-bar">
+    <view class='gouwuche'>
+      <view style='padding:5px;display:flex'>
+        <i class="icon-cart {{total_money !== 0 ? 'activity-color':'' }}">
+          <span class="number-msg" wx:if="{{cart_list.length !== 0}}">{{total_num}}</span>
+        </i>
+
+        <view class='gouwuche-price' wx:if="{{total_num === 0}}">购物车是空的</view>
+        <view class='gouwuche-price' style='color:white;font-size:18px' wx:if="{{total_money !== 0}}">¥ {{total_money}}.00</view>
+      </view>
+    </view>
+    <view class="submit-btn {{total_money !== 0?'active-color-btn':'' }}">
+      <view class="submit-btn-label {{total_money !== 0?'active-color-btn':'' }}" bindtap="goBalance">选好了</view>
+    </view>
+  </view>
+</view>

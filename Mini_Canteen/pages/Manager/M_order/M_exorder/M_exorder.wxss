@@ -1,0 +1,94 @@
+/* pages/Manager/M_order/M_exorder/M_exorder.wxss */
+page{
+  padding: 26rpx;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  height: 100vh;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contain{
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  width: 100%;
+}
+
+.label{
+  position: relative;
+}
+
+.label ::after{
+  content: '';
+  height: 4rpx;
+  position: absolute;
+  background-color: #ffbe76;
+  bottom: -4rpx;
+  left: 3%;
+  width: 94%;
+}
+
+.btn {
+  display: inline-block;
+  width: 43vw;
+  height: 50px;
+  border: none;
+  background: #2c2c2c;
+  background-size: 200%;
+  color: #ffbe76;
+  margin-bottom: 10rpx;
+}
+
+.btn_box{
+  flex: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 160rpx;
+}
+
+.box{
+  display: flex;
+}
+
+.textlabel{
+  flex-shrink: 0;
+  width: 4em;
+  height: 40px;
+  margin-right: 20rpx;
+  line-height: 40px;
+}
+
+.textb {
+  display: inline-block;
+  flex: 1;
+  border-bottom: 2rpx solid #ddd;
+  position: relative;
+  margin-left: 30rpx;
+}
+
+.textb input {
+  flex: 1;
+  font-size: 30rpx;
+  color: #333;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0px 5px;
+  height: 40px;
+}
+
+.number-box{
+  flex: 3;
+  margin-top: 40rpx ;
+}
+
+.date-box{
+  flex: 1;
+}

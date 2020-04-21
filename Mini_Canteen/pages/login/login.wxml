@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<form class="login-form" bindsubmit="login">
+
+  <view class="textb">
+    <input class="{{UclassName === 'focus' ? 'focus' : ''}}" focus="{{true}}" bindfocus="handleUfocus" bindblur="handleUblur" type="text" name='userid'/>
+    <span data-placeholder="用户名"></span>
+  </view>
+
+  <view class="textb">
+    <input class="{{PclassName === 'focus' ? 'focus' : ''}}" bindfocus="handlePfocus" bindblur="handlePblur" password="{{true}}" name='psd' />
+    <span data-placeholder="密码"></span>
+  </view>
+
+  <button class="logbtn" form-type="submit">登录</button>
+  <!-- <button class="logbtn" type="submit" bindtap="navgateToManager">管理员</button> -->
+  <!-- <button open-type="getPhoneNumber"></button> -->
+  <!-- <switch>管理员</switch> -->
+  <navigator class="regiNavi" url="../../pages/Customer/register/register">没有账号？点击注册</navigator>
+</form>

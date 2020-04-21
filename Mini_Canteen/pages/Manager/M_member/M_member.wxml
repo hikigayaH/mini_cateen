@@ -1,0 +1,20 @@
+<!--pages/M_member/M_member.wxml-->
+<view class="contain">
+  <view class="main-item" style="background-color: #eee">
+    <view class='first'>用户号</view>
+    <view class='second'>用户名</view>
+    <view class='third'>余额</view>
+  </view>
+  <block wx:for="{{member_list}}" wx:key="index">
+    <view class="main-item {{(index+1)%2===0 ? 'Odd':'Even'}}" bindtap="changefood" data-item='{{item}}'>
+      <view class='first'>{{member_list[index].userid}}</view>
+      <view class='second'>{{member_list[index].uname}}</view>
+      <view class='third'>{{member_list[index].ubalance}}</view>
+    </view>
+  </block>
+  <view class='btn-box'>
+    <button class='page_btn' bindtap="lastpage">上一页</button>
+    <text style="line-height: 70rpx; vertical-align: middle">{{pagenum}}/{{total_page}}</text>
+    <button class='page_btn' bindtap="nextpage">下一页</button>
+  </view> 
+</view>

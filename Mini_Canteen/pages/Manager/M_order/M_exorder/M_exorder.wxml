@@ -1,0 +1,42 @@
+<!--pages/Manager/M_order/M_exorder/M_exorder.wxml-->
+<view class="main">
+  <view class="date-box">
+    <view>
+      <text class="label">导出日期范围</text>
+    </view>
+    <view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindStartDateChange">
+        <view class="picker">
+          {{startdate}}
+        </view>
+      </picker>
+    </view>
+    <view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindEndDateChange">
+        <view class="picker">
+          {{enddate}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="number-box">
+    <view>
+      <text class="label">导出员工数据</text>
+    </view>
+
+    <form bindsubmit="partexport">
+      <view class='box'>
+        <view class='textlabel'>员工id</view>
+        <view class="textb" style="border-bottom-color:{{active ===1? '#ffbe76' : '#ddd'}}; caret-color:{{active ===1? '#ffbe76' : '#ddd'}}">
+          <input bindfocus="handlefocus" bindblur="handleblur" name="id" placeholder="填写员工id" placeholder-style="color: #adadad;" />
+        </view>
+      </view>
+
+      <view class="btn_box">
+        <button class="btn" form-type="submit">条件导出</button>
+        <button class="btn" bindtap="allexport">全部导出</button>
+      </view>
+    </form>
+  </view>
+</view>

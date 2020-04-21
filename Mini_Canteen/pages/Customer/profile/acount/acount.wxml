@@ -1,0 +1,31 @@
+<!--pages/Customer/profile/acount/acount.wxml-->
+<form class="login-form" bindsubmit="changepassword">
+  <view class='header_box'>
+    <view class='label'>用户号</view>
+    <text style="margin-left: 30rpx; vertical-align:middle; line-height: 40px;">{{userid}}</text>
+  </view>
+
+  <view class='box'>
+    <view class='label'>原密码</view>
+    <view class="textb" style="border-bottom-color:{{Oactive ===1? '#ffbe76' : '#ddd'}}; caret-color:{{Oactive ===1? '#ffbe76' : '#ddd'}}" >
+      <input bindfocus="handleOfocus" bindblur="handleOblur" name="psw_o" placeholder="填写原密码" placeholder-style="color: #adadad;"/>
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='label'>新密码</view>
+    <view class="textb" style="border-bottom-color:{{Nactive ===1? '#ffbe76' : '#ddd'}}; caret-color:{{Nactive ===1? '#ffbe76' : '#ddd'}}" >
+      <input bindfocus="handleNfocus" bindblur="handleNblur" password="{{true}}" name="psw_n" placeholder="填写新密码" placeholder-style="color: #adadad;"/>
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='label'>确认密码</view>
+    <view class="textb" style="border-bottom-color:{{Sactive ===1? '#ffbe76' : '#ddd'}}; caret-color:{{Sactive ===1? '#ffbe76' : '#ddd'}}" >
+      <input bindfocus="handleSfocus" bindblur="handleSblur" password="{{true}}"name="psw_s" placeholder="确认新密码" placeholder-style="color: #adadad;"/>
+    </view>
+  </view>
+
+
+  <button class="btn" form-type="submit">确认</button>
+</form>

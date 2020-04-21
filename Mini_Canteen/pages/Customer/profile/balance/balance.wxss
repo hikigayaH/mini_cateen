@@ -1,0 +1,25 @@
+/* pages/Customer/profile/balance/balance.wxss */
+.box{
+  width: 100vw;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  flex-flow: nowrap column;
+  margin-top: 180rpx;
+}
+
+.sonbox{
+  flex: 1;
+  font-size: 60rpx;
+}
+
+.btn {
+  display: block;
+  width: 90vw;
+  height: 50px;
+  border: none;
+  background: #2c2c2c;
+  color: #ffbe76;
+  margin-bottom: 20rpx;
+  margin-top: 40rpx;
+}

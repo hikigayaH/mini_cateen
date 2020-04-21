@@ -1,0 +1,30 @@
+<!--pages/profile/profile.wxml-->
+<view class="header-box">
+  <view class="image-box">
+    <image class="header-image" src="{{imageurl}}">
+    </image>
+  </view>
+  <text class="nickName">{{nickName}}</text>
+</view>
+
+<scroll-view class="body-box {{!isloaded? 'important': ''}}">
+  <view class="navi-btn" bindtap="tapSetting">
+    <i class="icon front-icon icon-settings"></i>设置
+    <i class="icon icon-keyboard_arrow_right"></i>
+  </view>
+  <view class="navi-btn" bindtap="tapBalance">
+    <i class="icon front-icon icon-money"></i>余额
+    <i class="icon icon-keyboard_arrow_right"></i>
+  </view>
+  <view class="navi-btn" bindtap="tapPersonal">
+    <i class="icon front-icon icon-person"></i>个人信息
+    <i class="icon icon-keyboard_arrow_right"></i>
+  </view>
+  <view class="navi-btn" bindtap="tapAccount">
+    <i class="icon front-icon icon-verified_user"></i>账户安全
+    <i class="icon icon-keyboard_arrow_right"></i>
+  </view>
+</scroll-view>
+
+<button class="exitbtn" wx:if="{{isloaded}}" bindtap="tapexitlogin">退出登录</button>
+<button class="exitbtn" wx:if="{{!isloaded}}" bindtap="taplogin">登录</button>

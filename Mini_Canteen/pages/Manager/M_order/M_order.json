@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "nav": "../../component/nav/nav"
+  },
+  "navigationBarBackgroundColor": "#000",
+  "navigationBarTextStyle": "white"
+}
